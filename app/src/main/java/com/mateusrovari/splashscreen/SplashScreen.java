@@ -13,6 +13,7 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+
         /*Simple hold animation to hold ImageView in the centre of the screen at a slightly larger
         scale than the ImageView's original one.*/
         Animation hold = AnimationUtils.loadAnimation(this, R.anim.hold);
@@ -21,7 +22,7 @@ public class SplashScreen extends AppCompatActivity {
         larger scale to its original scale.*/
         final Animation translateScale = AnimationUtils.loadAnimation(this, R.anim.translate_scale);
 
-        final ImageView imageView = (ImageView) findViewById(R.id.header_icon);
+        final ImageView imageView = findViewById(R.id.header_icon);
 
         translateScale.setAnimationListener(new Animation.AnimationListener() {
             @Override

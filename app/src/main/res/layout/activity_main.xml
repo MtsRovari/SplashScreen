@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/colorPrimary">
+    android:background="@color/dark_gray">
 
     <ImageView
         android:id="@+id/header_icon"
@@ -17,7 +17,7 @@
         android:layout_height="@dimen/image_header_dimen"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/image_header_top_margin"
-        android:src="@drawable/ic_camera_alt_48px" />
+        android:src="@drawable/github_logo" />
 
     <RelativeLayout
         android:id="@+id/login_container"
@@ -40,8 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:layout_marginTop="8dp"
-                android:foregroundTint="@color/colorPrimary">
+                android:layout_marginTop="8dp">
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/username_edit_text"
@@ -55,9 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:layout_marginTop="16dp"
-                app:passwordToggleTint="@color/colorPrimary"
-                android:foregroundTint="@color/colorPrimary">
+                android:layout_marginTop="16dp">
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/password_edit_text"
@@ -67,6 +64,7 @@
                     android:inputType="textPassword" />
 
             </android.support.design.widget.TextInputLayout>
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,9 +72,11 @@
                 android:layout_marginLeft="@dimen/login_button_margin"
                 android:layout_marginRight="@dimen/login_button_margin"
                 android:layout_marginTop="@dimen/login_button_margin"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/dark_gray"
                 android:text="Log in"/>
 
         </LinearLayout>
+
     </RelativeLayout>
+
 </RelativeLayout>
