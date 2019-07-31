@@ -3,20 +3,24 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:colorControlNormal">@color/colorPrimary</item>
-        <item name="android:textColor">@color/colorPrimaryDark</item>
-        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="colorPrimary">@color/dark_gray</item>
+        <item name="colorPrimaryDark">@color/dark_gray_status</item>
+        <item name="colorAccent">@color/gray</item>
+        <item name="android:colorControlNormal">@color/gray</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textColorHint">@color/gray</item>
     </style>
 
     <style name="RegistrationEditTextStyle">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:textColorHint">@color/colorPrimary</item>
-        <item name="android:textColor">@color/colorPrimaryDark</item>
-        <item name="android:tint">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:tint">@color/gray</item>
     </style>
 
+    <color name="white">#ffffff</color>
+    <color name="gray">#c4c4c4</color>
+    <color name="dark_gray">#3f3f3f</color>
+    <color name="dark_gray_status">#2a2a2a</color>
 </resources>
