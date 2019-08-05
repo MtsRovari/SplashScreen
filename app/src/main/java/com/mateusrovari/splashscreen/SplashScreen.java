@@ -3,11 +3,14 @@ package com.mateusrovari.splashscreen;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 public class SplashScreen extends AppCompatActivity {
+
+    private boolean isFirstAnimation = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +35,14 @@ public class SplashScreen extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                imageView.clearAnimation();
-                Intent intent = new Intent(SplashScreen.this, MainActivity.class);
-                startActivity(intent);
-                finish();
+                if (!isFirstAnimation) {
+                    imageView.clearAnimation();
+                    Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+
+                isFirstAnimation = true;
             }
 
             @Override
